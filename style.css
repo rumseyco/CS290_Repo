@@ -1,0 +1,111 @@
+﻿/******************************************
+**        Name: Collin Rumsey            **
+**       Email: rumseyco@oregonstate.edu **
+**       Class: CS 290_400               **
+**  Assignment: HW Assignment: HTML/CSS  **
+**        Date: July 1, 2018             **
+**   File Name: style.css                **
+** Description: Used to define the style **
+**              of the table, list, and  **
+**              forms from content.html  **
+******************************************/
+
+/* Table Headers */
+th {
+    border-style: solid;
+    border-width: thin;
+}
+
+/* Table Data */
+td {
+    border-style: solid;
+    border-width: thin;
+}
+
+/* Table Headers withing the body of the table */
+tbody th {
+    font-style: italic;
+    font-weight: normal;
+}
+
+/* Even numbered Table Rows which do not include the footer
+** and are only in the body section of the table */
+tbody tr:nth-of-type(even):not(:last-of-type) {
+    background-color: #FDD26E; /* OSU EECS Candela */
+}
+
+/* Odd numbered Table Rows which do not include the footer
+** and are only in the body section of the table */
+tbody tr:nth-of-type(odd):not(:last-of-type) {
+    background-color: #FFB500; /* OSU EECS Luminance */
+}
+
+/* Table */
+table {
+    border-style:solid;
+    border-color: #003B5C;  /* OSU EECS Star Canvas */
+    border-width:thick;
+}
+
+/* List Header*/
+lh {
+    text-decoration:underline;
+    font-weight:bold;
+}
+
+/* First Division found within the body of the html file */
+body>div {
+    text-align: left;
+    width:75%;
+    padding-top: 20px;
+    
+}
+
+/* Outer content class */
+.outer-content {
+    background-color: #FF3399; /* random pink hue */
+}
+
+/* Inner content class */
+.inner-content {
+    background-color:Blue; /* default blue */
+    width: 75%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/* form */
+form {
+    border-style: solid;
+    overflow: hidden;
+    width:50%;
+    margin-left:0%;
+    
+}
+
+/* input types of text, number, and password that are found within labels which 
+** are within a form */
+form label  input[type = "text"] , input[type = "number"], input[type = "password"] {   
+    margin: 0 30% 0 0;
+    font-weight:bold;
+    width: 80%;    
+}
+
+.title_block {
+    left: 0;
+    background-color: #000000; /* OSU Paddletail Black */
+    color: #DC4405; /* OSU Beaver Orange */
+    width: calc(100% - 20px);
+    border-top-style: solid;
+    border-top-width: thick;
+    border-color: #DC4405; /* OSU Beaver Orange */
+    padding-left: 20px;
+    padding-bottom: 20px;
+    /*    #7A6855 = OSU EECS High Desert */ 
+}
+
+.title_block_name {
+    padding-bottom: 0px;
+    color: #FFFFFF; /* OSU Bucktooth White */
+    
+}

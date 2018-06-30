@@ -1,0 +1,282 @@
+﻿<!--
+*******************************************
+**        Name: Collin Rumsey            **
+**       Email: rumseyco@oregonstate.edu **
+**       Class: CS 290_400               **
+**  Assignment: HW Assignment: HTML/CSS  **
+**        Date: July 1, 2018             **
+**   File Name: content.html             **
+** Description: Used to define the       **
+**              structure of assignment: **
+**              HTML/CSS which includes  **
+**              a table, list, divisions **
+**              and forms.               **
+*******************************************
+-->
+
+<!DOCTYPE html>
+    <meta charset="utf-8" />
+    <title>content</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <body>
+
+    <!--  1. Table -->
+
+    <table>
+        <caption>
+            Subaru Model Comparison (top end trim packages)</caption>
+        <thead>
+            <tr>
+                <th>
+                </th>
+                <th>
+                    Horsepower
+                </th>
+                <th>
+                    Miles per Gallon
+                </th>
+                <th>
+                    Passenger Volume (ft<sup>3</sup>)
+                </th>
+                <th>
+                    Cargo Volume (ft<sup>3</sup>)
+                </th>
+                <th>
+                    Ground Clearance (in)
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>
+                    Forester 2.0XT
+                </th>
+                <td>
+                    170
+                </td>
+                <td>
+                    27/23
+                </td>
+                <td>
+                    103.3
+                </td>
+                <td>
+                    31.5
+                </td>
+                <td>
+                    8.7
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    WRX STI
+                </th>
+                <td>
+                    310
+                </td>
+                <td>
+                    22/17
+                </td>
+                <td>
+                    96.6
+                </td>
+                <td>
+                    12
+                </td>
+                <td>
+                    4.9
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Ascent
+                </th>
+                <td>
+                    260
+                </td>
+                <td>
+                    26/20
+                </td>
+                <td>
+                    153.5
+                </td>
+                <td>
+                    47.5
+                </td>
+                <td>
+                    8.7
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Crosstrek
+                </th>
+                <td>
+                    152
+                </td>
+                <td>
+                    33/27
+                </td>
+                <td>
+                    100.9
+                </td>
+                <td>
+                    20.8
+                </td>
+                <td>
+                    8.7
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Outback 3.6R
+                </th>
+                <td>
+                    175
+                </td>
+                <td>
+                    27/20
+                </td>
+                <td>
+                    104.5
+                </td>
+                <td>
+                    35.5
+                </td>
+                <td>
+                    8.7
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    Top Pick for HP:<br /><i>WRX STI</i>
+                </td>
+                <td colspan="4">
+                    Top Pick for non-HP:<br /><i>Ascent</i>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!--  2. List -->
+
+    <ol>
+        <lh> Grocery List</lh>
+        <li> Oranges </li>
+        <li> Milk </li>
+        <li> Eggs </li>
+        <li> Bread </li>
+    </ol>
+
+    <!-- 3. Division -->
+
+    <div class= "outer-content">
+    This is the Division. 
+    The width of this division is 75% of the width of the page. 
+    There is a 20px space between the division and the previous element. 
+    The division is of class 'outer-content' and is pink.
+        <div class= "inner-content">
+        This is the inner-content class. It is blue. It takes up 75% of the 
+        parent division and is centered. 
+        The font is white so that it is easier to see.
+        </div>
+    </div>
+
+    <!-- 4. Forms  -->
+
+    <br />
+    <form action="http://classes.engr.oregonstate.edu/eecs/winter2015/cs290-400/tools/class-content/form_tests/check_request.php to better facilitate testing"
+                    method = "get">
+    <legend>
+        Form 1, Get Method
+    </legend>
+        <fieldset>
+            <legend>Data Entry Section:</legend>
+            <label>Text:
+                <input type="text" name="text_input" size="30" maxlength="100" />
+            </label>
+            <br />
+            <label>Number:
+                <input type="number" name="numerical_input" size="50" maxlength="100" />
+            </label>
+            <br />
+            <label>Password:
+                <input type="password" name="password_input" size="30" maxlength="100" />
+            </label>
+            <br />        
+        </fieldset>
+        <br />
+        <fieldset>
+            <legend>Question Section:</legend>
+            <p>Select a candy
+                <br />
+                <label>
+                    <input type="radio" name="candy" value="Snickers" />Snickers</
+                </label>
+                <br />
+                <label>
+                    <input type="radio" name="candy" value="Skittles" />Skittles</
+                </label>
+                <br />
+                <label>
+                    <input type="radio" name="candy" value="Mentos" />Mentos</
+                </label>
+            </p>            
+        </fieldset>    
+    </form>
+    <br />
+        <form action="http://classes.engr.oregonstate.edu/eecs/winter2015/cs290-400/tools/class-content/form_tests/check_request.php to better facilitate testing"
+                    method = "post">
+    <legend>
+        Form 2, Post Method
+    </legend>
+        <fieldset>
+            <legend>Data Entry Section:</legend>
+            <label>Text:
+                <input type="text" name="text_input" size="30" maxlength="100" />
+            </label>
+            <br />
+            <label>Number:
+                <input type="number" name="numerical_input" size="30" maxlength="100" />
+            </label>
+            <br />
+            <label>Password:
+                <input type="password" name="password_input" size="30" maxlength="100" />
+            </label>
+            <br />        
+        </fieldset>
+        <br />
+        <fieldset>
+            <legend>Question Section:</legend>
+            <p>Select a candy
+                <br />
+                <label>
+                    <input type="radio" name="candy" value="Snickers" />Snickers</
+                </label>
+                <br />
+                <label>
+                    <input type="radio" name="candy" value="Skittles" />Skittles</
+                </label>
+                <br />
+                <label>
+                    <input type="radio" name="candy" value="Mentos" />Mentos</
+                </label>
+            </p>            
+        </fieldset>    
+    </form>
+
+
+<!--  Title Block  -->
+
+    <br /><br /><br />
+    <div class="title_block">
+        <div class="title_block_name">
+            <b>Collin Rumsey</b> <br /><i> rumseyco@oregonstate.edu</i>
+        </div>
+    HW Assignment:<b> HTML/CSS</b>
+    <br /> July 1, 2018
+    <br /> Web Development<br /> CS 290_400<br />Summer 2018
+    </div>
+ 
+</body>
+</html>
